@@ -1,0 +1,58 @@
+
+.navbar {
+    background: #fff;
+    width: 100%;
+}
+
+.nav-link {
+    padding: 6px 16px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+
+.nav-link:hover {
+    color: rgb(254, 118, 36);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-drop-down-link {
+    padding: 6px 16px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.link-hover {
+    color: rgb(254, 118, 36);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.opening-animation {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid white;
+    background: transparent;
+}
+
+.caret {
+  border: 0.5px solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  transition: all .2s ease-in-out;
+  padding: 4px;
+  margin-left: 8px;
+}
+  
+.caret-up {
+    transform: rotate(225deg);
+    border: 0.5px solid rgb(254, 118, 36);
+    border-width: 0 3px 3px 0;
+}
