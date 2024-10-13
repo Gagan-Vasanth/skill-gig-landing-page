@@ -1,0 +1,45 @@
+.our-services-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 2% 0%;
+}
+
+.our-services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 2%;
+    max-width: 90%;
+    background-color: #E5EAF3;
+    overflow-y: hidden;
+    border-radius: 24px;
+}
+
+.our-services-title {
+    font-size: 44px;
+    font-weight: 800;
+    color: #2E5061;
+}
+
+.our-services-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2E5061;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.our-services-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 1094) {
+    
+}

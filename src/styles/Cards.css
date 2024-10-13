@@ -1,0 +1,62 @@
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card-container {
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    min-width: 480px;
+    max-width: 45%;
+}
+
+.card-title  {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2D4F61;
+    margin-bottom: 6px;
+}
+
+.card-desc  {
+    font-size: 16px;
+    font-weight: 400;
+    color: #698695;
+    margin-bottom: 6px;
+}
+
+.arrow-pointer {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.arrow-pointer:hover {
+    transform: scaleX(1.5);
+}
+
+.course-card-container {
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    width: 440px;
+    border: 1px solid #E3E4E5;
+}
+
+.small-height {
+    width: 100px !important;
+    height: 40px !important;
+}
+
+
+@media screen and (max-width: 582px) {
+    .card-container {
+        min-width: 90%;
+    }
+
+    .course-card-container {
+       width: 90%;
+    }
+}

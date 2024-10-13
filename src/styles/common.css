@@ -1,58 +1,62 @@
+::-webkit-scrollbar {
+    display: none;
+  }
 
-.navbar {
-    background: #fff;
-    width: 100%;
+html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 65px;
+    scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
 
-.nav-link {
-    padding: 6px 16px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    
+.nav-section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
 }
 
-.nav-link:hover {
-    color: rgb(254, 118, 36);
-    transition: all .2s ease-in-out;
-    cursor: pointer;
+.normal-text {
+    font-size: 18px;
 }
 
-.nav-drop-down-link {
-    padding: 6px 16px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    cursor: pointer;
+.basic-images {
+    width: 24px;
+    height: 24px;
 }
 
-.link-hover {
-    color: rgb(254, 118, 36);
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-}
-
-.opening-animation {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
+/* .button-span {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    border: 2px solid white;
-    background: transparent;
+    background: #fff;
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate-button-span 1s linear infinite;
 }
 
-.caret {
-  border: 0.5px solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  transform: rotate(45deg);
-  transition: all .2s ease-in-out;
-  padding: 4px;
-  margin-left: 8px;
+@keyframes animate-button-span {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+} */
+
+@media screen and (max-width: 478px) {
+    .normal-text {
+        font-size: 16px;
+    }
+
+    .basic-images {
+        width: 20px !important;
+        height: 20px !important;
+    }
 }
-  
-.caret-up {
-    transform: rotate(225deg);
-    border: 0.5px solid rgb(254, 118, 36);
-    border-width: 0 3px 3px 0;
-}
+

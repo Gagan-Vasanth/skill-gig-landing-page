@@ -1,0 +1,153 @@
+.home-section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 120px 48px;
+    background-color: #F5FCFF;
+    width: 100%;
+    height: calc(100vh - 65px);
+    margin-top: 65px;
+    overflow-y: hidden;
+}
+
+.home-title {
+    font-size: 70px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #1562AA 0%, #082744 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    margin-left: 5px;
+}
+
+.home-description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2D4F61;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.home-section-1, .home-section-2 {
+    max-width: 50%;
+}
+
+.button-group {
+    max-width: 70%;
+}
+
+.home-button {
+    padding: 24px;
+    color: #fff;
+    min-width: 190px;
+    border-radius: 8px;
+}
+
+.connect-now {
+    background: #FE7624;
+}
+
+.join-now {
+    background: #1562AA;
+}
+
+@media screen and (min-width: 1054px) {
+    
+    .button-group {
+        margin-top: 120px !important
+    }
+
+}
+
+@media screen and (max-width: 1054px) {
+    /* .home-section-2 {
+        display: none;
+        visibility: hidden;
+    } */
+    .home-section-1 {
+        max-width: 50%;
+    }
+
+    .button-group {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1224px) {
+    .home-button {
+        min-width: 160px;
+    }
+
+}
+
+@media screen and (max-width: 728px) {
+    .button-group {
+        max-width: 70%;
+    }
+
+    .home-section-container {
+        padding: 100px 24px;
+    }
+
+    .button-group {
+        max-width: 100%;
+    }
+
+    .home-section-container {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .home-section-container {
+        padding: 50px 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-section-1 {
+        max-width: 100%;
+    }
+
+    .home-section-2 {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .button-group {
+        max-width: 100%;
+    }
+
+    .home-title {
+        font-size: 48px;
+    }
+
+    .home-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .home-section-2 {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .home-section-2 {
+        max-width: 65%;
+        max-height: 60%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .home-section-2 {
+        max-width: 90%;
+        max-height: 60%;
+    }
+}
