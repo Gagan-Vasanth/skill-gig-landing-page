@@ -341,3 +341,29 @@ export const allServicesDetails = {
         ]
     }
 }
+
+export const ourProductDetails = {
+    title: 'Our Product',
+    cards: [
+        {
+            title: 'Learning Management System',
+            iconName: 'lms',
+        },
+        {
+            title: 'Human Resource Management System',
+            iconName: 'hrms',
+        },
+        {
+            title: 'Enterprise Resource Planning Solutions',
+            iconName: 'erp',
+        },
+        {
+            title: 'GetWheels',
+            iconName: 'getwheels',
+        },
+        {
+            title: 'So Park',
+            iconName: 'sopark',
+        },
+    ]
+}
