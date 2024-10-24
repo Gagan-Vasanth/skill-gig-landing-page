@@ -1,0 +1,129 @@
+.contact-us-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    padding: 5%;
+    background: #E5EAF3;
+    padding-bottom: 3%;
+}
+
+.contact-us-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contact-us-left {
+    max-width: 40%;
+}
+
+.branding {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D4F61;
+    margin-top: 16px;
+}
+
+.brand-content {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D4F61;
+    margin-top: 16px;
+    padding-right: 10%;
+}
+
+.reach-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D4F61;
+    margin-top: 16px; 
+}
+
+.address-section {
+    display: grid;
+    grid-gap: 6px 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "address-one address-two" "address-three address-four";
+}
+
+.address-one {
+    grid-area: address-one;
+}
+
+.address-two {
+    grid-area: address-two;
+}
+
+.address-three {
+    grid-area: address-three;
+}
+
+.address-four {
+    grid-area: address-four;
+}
+
+
+
+.address-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2D4F61;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.address-name img {
+    margin-right: 8px;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.download-broucher {
+    color: #FE7624;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: #2D4F61;
+    opacity: 20%;
+    margin-top: 40px
+}
+
+.copyrights {
+    margin-top: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f272f;
+    text-align: center;
+    width: 100%;
+}
+
+.copyrights a {
+    color: #1562AA;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 724px) {
+    .contact-us-container {
+        flex-direction: column;
+    }
+
+    .contact-us-left {
+        max-width: 100%;
+    }
+
+    .address-section {
+        grid-template-areas: "address-one address-one" "address-two address-two" "address-three address-three" "address-four address-four";
+    }
+}

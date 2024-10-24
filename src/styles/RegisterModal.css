@@ -1,0 +1,113 @@
+.register-modal-left {
+    padding: 12px;
+    display: grid;
+    grid-gap: 8px 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "user-name user-name" "user-email user-phone" "university pass-out" "stream qualification" "courses-interested courses-interested" "query query" "register-now register-now";
+}
+
+.register-modal-left label {
+    font-size: 12px;
+}
+
+.user-name {
+    grid-area: user-name;
+}
+
+.user-email {
+    grid-area: user-email;
+}
+
+.user-phone {
+    grid-area: user-phone;
+}
+
+.university {
+    grid-area: university;
+}
+
+.pass-out {
+    grid-area: pass-out;
+}
+
+.stream {
+    grid-area: stream;
+}
+
+.qualification {
+    grid-area: qualification;
+}
+
+.courses-interested {
+    grid-area: courses-interested;
+    position: relative;
+}
+
+.query {
+    grid-area: query;
+}
+
+.register-now {
+    grid-area: register-now;
+    padding: 16px;
+    text-align: center;
+    color: #B0B7C3;
+    border-radius: 10px;
+    background: #f7f7f7;
+}
+
+.register-modal-left input {
+    padding: 12px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.mandatory label::after {
+    content: ' *';
+    color: red;
+}
+
+.register-now-enabled {
+    grid-area: register-now;
+    padding: 16px;
+    text-align: center;
+    color: #B0B7C3;
+    border-radius: 10px;
+    background: #f7f7f7;
+    background: #FE7624;
+    color: #fff;
+    cursor: pointer;
+}
+
+.email-error {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: red;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 570px) {
+    .register-modal-left {
+        grid-template-areas: "user-name user-name" "user-email user-email" "user-phone user-phone" "university university" "pass-out pass-out" "stream stream" " qualification qualification" "courses-interested courses-interested" "query query" "register-now register-now";
+        max-height: 570px;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
